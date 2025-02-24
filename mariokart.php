@@ -4,17 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        html
-        {
-            text-align: center;
-        }
-
-        h2
-        {
-            margin-top: 150px;
-        }
-    </style>
+    <link href="ressources/css/mariokart.css" rel="stylesheet" />
     <script>
         function afficherInfos(str) {            
             if (str === "") {

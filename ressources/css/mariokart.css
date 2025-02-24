@@ -1,0 +1,23 @@
+html
+{
+    text-align: center;
+}
+
+h2
+{
+    margin-top: 150px;
+}
+
+#my-data
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#my-data > div
+{
+    width: 20%;
+    border: 1px solid black;
+    margin-right: 25px;
+}

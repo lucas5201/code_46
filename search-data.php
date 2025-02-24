@@ -21,13 +21,20 @@ $res = $data->fetchAll();
 
 if (count($res) === 0)
 {
-    echo "<div>Aucun résultat !</div>";
+    $msg = "<div>Aucun résultat !</div>";
 }
 else 
 {
+    $msg = "";
     foreach($res as $circuit)
     {
-        echo "<div><h2>{$circuit['circuit']}</h2></div>";
-        echo "<div>{$circuit['coupe']} - {$circuit['jeux']}</div>"; 
+        $msg .= <<<HTML
+    <div>
+        <h2>{$circuit['circuit']}</h2>
+        <div>{$circuit['coupe']} - {$circuit['jeux']}</div>;
+    </div>; 
+HTML;
     }
 }
+
+echo $msg;
